@@ -14,7 +14,7 @@ var connector = useEmulator ? new builder.ChatConnector() : new botbuilder_azure
 var bot = new builder.UniversalBot(connector);
 
 bot.dialog('/', function (session) {
-    session.send('You said ' + session.message.text);
+    session.send('I think you said ' + session.message.text);
 });
 
 if (useEmulator) {
